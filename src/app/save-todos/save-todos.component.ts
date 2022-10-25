@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Todo } from '../models/Todo';
+
 
 @Component({
   selector: 'app-save-todos',
@@ -10,9 +11,12 @@ export class SaveTodosComponent implements OnInit {
 
   constructor() { }
 
-  todos!: Todo[];
+
+
+  @Input() todos!: Todo[];
 
   ngOnInit(): void {
+    this.todos = []
   }
 
 
