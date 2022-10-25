@@ -13,10 +13,11 @@ export class SaveTodosComponent implements OnInit {
 
 
 
-  @Input() todos!: Todo[];
+  @Input() todos?: Todo[];
 
   ngOnInit(): void {
-    this.todos = []
+    this.todos = [
+  ]
   }
 
 

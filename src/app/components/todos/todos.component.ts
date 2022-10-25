@@ -42,6 +42,10 @@ export class TodosComponent implements OnInit {
     });
     this.inputTodo = '';
     }
+  }
+  saveTodo() {
+    let data = this.todos;
 
+    localStorage.setItem('TODO', JSON.stringify(data));
   }
 }
