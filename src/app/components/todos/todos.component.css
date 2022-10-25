@@ -1,8 +1,9 @@
 .todo {
-  position: absolute;
 	display: flex;
+  width: 90%;
 	padding: 10px 15px;
 	background-color: #FFF;
+  margin: 0 auto;
 	border-bottom: 1px solid #DDD;
 }
 
@@ -19,6 +20,7 @@
 }
 
 .todo .content {
+  position: relative;
 	flex: 1 1 100%;
 }
 
@@ -27,7 +29,6 @@
 }
 
 .todo-input {
-  position: relative;
 	display: block;
   width: 90%;
 	padding: 10px 15px;
