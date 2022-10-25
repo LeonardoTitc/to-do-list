@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
 
 import { FormsModule } from '@angular/forms';
+import { SaveTodosComponent } from './save-todos/save-todos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent
+    TodosComponent,
+    SaveTodosComponent
   ],
   imports: [
     BrowserModule,
