@@ -12,6 +12,8 @@ export class TodosComponent implements OnInit {
 
   inputTodo: string = "";
 
+  TODO: any;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -43,4 +45,15 @@ export class TodosComponent implements OnInit {
 
   }
 
+  saveTodo() {
+    let data = this.todos;
+
+    localStorage.setItem('TODO', JSON.stringify(data));
+  }
+
+  // loadTodo() {
+  //   let data: any = localStorage.getItem('TODO');
+  //   // alert(data)
+  //   this.TODO = JSON.parse(data)
+  // }
 }
